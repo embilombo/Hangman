@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="assets/javascript/game.js"></script>
+    <title>Word Guess</title>
+</head>
+<body>
+    <div class="bg">
+        <div class="control-size">
+            <img class="logo" src="assets/images/hangman_rocks.png">
+            <h1>HANGMAN</h1>
+            <h1>Hang...Hang...Hang!!!</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <input id="startGame" type="image" src="assets/images/donotpress.png" onclick="startGame()">
+                    </div>
+                </div>
+                <div class="row special">  
+                    <div class="col-xs-6">
+                        <div id="display" style="display: none;">
+                            <div class="card card-one" style="width: 18rem;">
+                                <ul class="list-group list-group-flush">
+                                    <li id="wins" class="list-group-item">User Wins: 0</li>
+                                    <li id="losses" class="list-group-item">User Losses: 0</li>
+                                    <li id="counter"class="list-group-item">Game Counter: 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="col-xs-6">
+                        <div id="playAgain" style="display: none;">
+                            <div class="card card-two" style="width: 18rem;">
+                                <ul class="list-group list-group-flush">
+                                    <li id="num" class="list-group-item">Number of Guesses Left: 7</li>
+                                    <li id="userGuess" class="list-group-item">User Guesses</li>
+                                    <li id="word" class="list-group-item">This is the word</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
